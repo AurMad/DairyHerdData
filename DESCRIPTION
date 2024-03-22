@@ -1,0 +1,13 @@
+Package: DairyHerdData
+Type: Package
+Title: Examples of commonly available datasets in cattle dairy herds.
+Version: 1.0
+Author: Aurélien Madouasse
+Maintainer: Aurélien Madouasse <aurelien.madouasse@oniris-nantes.fr>
+Description: The package contains milk recording, aritificial insemination, movement and individual animal data. The datasets were assembled based on milk recording data collected in 100 herds between 2006 and 2010, covering a total of 5 years. The intended uses are teaching herd data analysis and testing of epidemiological indicators for analysing such data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: 
+    R (>= 4.0)

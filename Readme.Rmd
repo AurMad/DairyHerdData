@@ -1,0 +1,60 @@
+---
+title: "DairyHerdData: commonly available datasets in cattle dairy herds."
+output: 
+  github_document:
+    toc: true
+    toc_depth: 1
+---
+
+This package gathers 4 example datasets that are commonly available in cattle dairy herds. These datasets can be used to teach herd data analysis and to develop and test epidemiological indicators. 
+
+The 4 datasets are:
+
+- `rec`: milk recording data for 100 herds
+- `ai`: artificial insemination data
+- `mvt`: movements of animals between herds (birth, commercial transactions, deaths)
+- `anim`: individual animal information such as date and herd of birth, breed...
+
+The datasets were constructed by first taking a random sample of 100 dairy herds enrolled in a milk recording scheme between 2006 and 2010. Constraints were however placed on the number of animals recorded and the number of cows recorded per test-day. The data from the cows in this initial dataset were then retrieved from the artificial insemination, movement and animal databases. All the herd and animal data were then anonymised.
+
+
+# Package installation
+
+The package is only available from github. In order to install it, use the `install_github()` function from the `devtools` package.
+
+```{r install-package}
+#| eval: false
+
+devtools::install_github("AurMad/DairyHerdData")
+```
+
+# Documentation
+
+The datasets are documented. For example, in order to know what is in the `rec` dataset, just type `?rec` in your console after having attached the package.
+
+```{r help-rec}
+#| eval: false
+
+## attaching the package
+library(DairyHerdData)
+
+## help page for the rec dataset
+?rec
+```
+
+
+# Loading the data
+
+To load any of these dataset in memory, save it in a new variable after having attached the package. This will create a `data.frame` containing the data.
+
+```{r loading-rec}
+## attaching the package
+library(DairyHerdData)
+
+## loading the milk recording dataset
+rec <- rec
+
+## inspecting the data
+head(rec)
+```
+
